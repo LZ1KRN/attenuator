@@ -77,7 +77,7 @@ F 3 "" H 4500 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 3850 3650 4050
+	3650 3850 3650 4000
 Wire Wire Line
 	4500 3850 4500 4050
 $Comp
@@ -105,23 +105,14 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad Gnd1
 U 1 1 5E248D13
-P 4100 4300
-F 0 "Gnd1" H 4000 4257 50  0000 R CNN
-F 1 "MountingHole_Pad" H 4000 4348 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4100 4300 50  0001 C CNN
-F 3 "~" H 4100 4300 50  0001 C CNN
-	1    4100 4300
+P 3900 4100
+F 0 "Gnd1" H 3800 4057 50  0000 R CNN
+F 1 "MountingHole_Pad" H 3800 4148 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3900 4100 50  0001 C CNN
+F 3 "~" H 3900 4100 50  0001 C CNN
+	1    3900 4100
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3650 4050 4100 4050
-Wire Wire Line
-	4100 4050 4100 4200
-Connection ~ 3650 4050
-Wire Wire Line
-	4100 4050 4500 4050
-Connection ~ 4100 4050
-Connection ~ 4500 4050
 Wire Wire Line
 	4750 3250 4500 3250
 Connection ~ 4500 3250
@@ -132,4 +123,23 @@ Text Notes 7450 7500 0    50   ~ 0
 Attenuator 10dB
 Text Notes 1000 950  0    50   ~ 0
 All Resistors TO-220 /50W /Non Inductive
+Wire Wire Line
+	3900 4000 3650 4000
+Connection ~ 3650 4000
+Wire Wire Line
+	3650 4000 3650 4050
+$Comp
+L Mechanical:MountingHole_Pad Gnd2
+U 1 1 5E247856
+P 4800 4150
+F 0 "Gnd2" H 4700 4107 50  0000 R CNN
+F 1 "MountingHole_Pad" H 4700 4198 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4800 4150 50  0001 C CNN
+F 3 "~" H 4800 4150 50  0001 C CNN
+	1    4800 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 4050 4500 4050
+Connection ~ 4500 4050
 $EndSCHEMATC
