@@ -1,0 +1,2 @@
+R100R - TO220;https://bg.farnell.com/vishay/rto050f100r0jte1/res-100r-5-50w-to-220-thick-film/dp/1140234
+R75R  - TO220;https://bg.farnell.com/caddock/mp850-75-0-1/power-resistor-non-inductive-50w/dp/3218616

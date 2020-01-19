@@ -1,0 +1,135 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5E243A60
+P 3650 3700
+F 0 "R1" H 3720 3746 50  0000 L CNN
+F 1 "100R" H 3720 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Horizontal_TabDown" V 3580 3700 50  0001 C CNN
+F 3 "~" H 3650 3700 50  0001 C CNN
+	1    3650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E243DCD
+P 4500 3700
+F 0 "R3" H 4431 3654 50  0000 R CNN
+F 1 "100R" H 4431 3745 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Horizontal_TabDown" V 4430 3700 50  0001 C CNN
+F 3 "~" H 4500 3700 50  0001 C CNN
+	1    4500 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E2440FD
+P 4050 3250
+F 0 "R2" V 3843 3250 50  0000 C CNN
+F 1 "75R" V 3934 3250 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-2_Horizontal_TabDown" V 3980 3250 50  0001 C CNN
+F 3 "~" H 4050 3250 50  0001 C CNN
+	1    4050 3250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	3650 3550 3650 3250
+Wire Wire Line
+	3650 3250 3900 3250
+Wire Wire Line
+	4200 3250 4500 3250
+Wire Wire Line
+	4500 3250 4500 3550
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 5E2464DF
+P 3650 4050
+F 0 "#PWR0101" H 3650 3800 50  0001 C CNN
+F 1 "GNDREF" H 3655 3877 50  0000 C CNN
+F 2 "" H 3650 4050 50  0001 C CNN
+F 3 "" H 3650 4050 50  0001 C CNN
+	1    3650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0102
+U 1 1 5E246906
+P 4500 4050
+F 0 "#PWR0102" H 4500 3800 50  0001 C CNN
+F 1 "GNDREF" H 4505 3877 50  0000 C CNN
+F 2 "" H 4500 4050 50  0001 C CNN
+F 3 "" H 4500 4050 50  0001 C CNN
+	1    4500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3850 3650 4050
+Wire Wire Line
+	4500 3850 4500 4050
+$Comp
+L Mechanical:MountingHole_Pad In1
+U 1 1 5E247802
+P 3300 3250
+F 0 "In1" V 3537 3253 50  0000 C CNN
+F 1 "MountingHole_Pad" V 3446 3253 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 3300 3250 50  0001 C CNN
+F 3 "~" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad Out1
+U 1 1 5E247F60
+P 4850 3250
+F 0 "Out1" V 4804 3400 50  0000 L CNN
+F 1 "MountingHole_Pad" V 4895 3400 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4850 3250 50  0001 C CNN
+F 3 "~" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad Gnd1
+U 1 1 5E248D13
+P 4100 4300
+F 0 "Gnd1" H 4000 4257 50  0000 R CNN
+F 1 "MountingHole_Pad" H 4000 4348 50  0000 R CNN
+F 2 "TestPoint:TestPoint_Pad_2.5x2.5mm" H 4100 4300 50  0001 C CNN
+F 3 "~" H 4100 4300 50  0001 C CNN
+	1    4100 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 4050 4100 4050
+Wire Wire Line
+	4100 4050 4100 4200
+Connection ~ 3650 4050
+Wire Wire Line
+	4100 4050 4500 4050
+Connection ~ 4100 4050
+Connection ~ 4500 4050
+Wire Wire Line
+	4750 3250 4500 3250
+Connection ~ 4500 3250
+Wire Wire Line
+	3400 3250 3650 3250
+Connection ~ 3650 3250
+Text Notes 7450 7500 0    50   ~ 0
+Attenuator 10dB
+Text Notes 1000 950  0    50   ~ 0
+All Resistors TO-220 /50W /Non Inductive
+$EndSCHEMATC
